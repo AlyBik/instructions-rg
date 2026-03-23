@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все инструкции</title>
+    <link rel="stylesheet" href="instruction.css">
+    <style>
+        .instructions-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin: 15px 0;
+        }
+        
+        .instruction-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        
+        .instruction-item:hover {
+            background: #e7f3ff;
+            border-color: #2e75b5;
+            transform: translateX(5px);
+        }
+        
+        .instruction-item::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        
+        .instruction-item span {
+            flex: 1;
+            font-weight: 500;
+            font-size: 13px;
+        }
+        
+        .section-header {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: white;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 25px 0 12px 0;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+
+        .instruction-page > h2 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: white;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 15px 0 12px 0;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Все инструкции</h1>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="instruction-page">
+            <div class="breadcrumb">
+                <a href="index.html">Главная</a>
+                <span>→</span>
+                <span>Все инструкции</span>
+            </div>
+            
+            <a href="index.html" class="back-link">← На главную</a>
+
+            <h2>Инструкции</h2>
+            
+            <div class="instructions-list">
+                <a href="functions/loading.html" class="instruction-item"><span>Контроль и планирование загрузки сотрудников</span></a>
+                <a href="functions/help.html" class="instruction-item"><span>Помощь сотрудникам группы в решении сложных вопросов</span></a>
+                <a href="functions/presale.html" class="instruction-item"><span>Участие в пресейлах</span></a>
+                <a href="functions/competence.html" class="instruction-item"><span>Проведение оценки компетенций</span></a>
+                <a href="functions/ipr.html" class="instruction-item"><span>Подготовка ИПР</span></a>
+                <a href="functions/matrix.html" class="instruction-item"><span>Подготовка требований для перехода на следующую компетенцию</span></a>
+                <a href="functions/vacation-days.html" class="instruction-item"><span>Учет отгулов сотрудников</span></a>
+                <a href="functions/absence.html" class="instruction-item"><span>Согласование отсутствий сотрудников</span></a>
+                <a href="functions/internal-works.html" class="instruction-item"><span>Контроль содержания внутренних работ сотрудников</span></a>
+                <a href="functions/interview.html" class="instruction-item"><span>Проведение собеседований кандидатов</span></a>
+                <a href="functions/bonus.html" class="instruction-item"><span>Расчет премии сотрудникам</span></a>
+                <a href="functions/nzp.html" class="instruction-item"><span>Контроль НЗП</span></a>
+                <a href="functions/probation-meetings.html" class="instruction-item"><span>Планирование встреч по итогам испытательного срока новых сотрудников</span></a>
+                <a href="functions/underload.html" class="instruction-item"><span>Контроль недозагруженных сотрудников</span></a>
+                <a href="functions/passwords.html" class="instruction-item"><span>Правила хранения и передачи паролей</span></a>
+            </div>
+
+            <div class="section-header">Дополнительные статьи</div>
+            
+            <div class="instructions-list">
+                <a href="functions/additional-articles.html" class="instruction-item"><span>Дополнительные статьи</span></a>
+                <a href="functions/burnout.html" class="instruction-item"><span>Как заметить выгорание у удаленного сотрудника?</span></a>
+                <a href="functions/rps-coordination.html" class="instruction-item"><span>Согласованность работы с РПС</span></a>
+                <a href="functions/courses.html" class="instruction-item"><span>Список курсов для руководителей</span></a>
+                <a href="functions/equipment-issues.html" class="instruction-item"><span>Порядок действий при неисправностях</span></a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Инструкции для руководителей групп</p>
+    </footer>
+</body>
+</html>
